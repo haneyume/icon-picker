@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { Navbar, NavLink, Badge, Stack, Tooltip } from '@mantine/core';
-import { IconHome, IconSettings } from '@tabler/icons-react';
+import { IconHome, IconIcons, IconSettings } from '@tabler/icons-react';
 
 export const AppNavbar = () => {
   const navigate = useNavigate();
@@ -10,9 +10,21 @@ export const AppNavbar = () => {
 
   const links = [
     {
-      icon: IconHome,
-      label: 'Home',
+      icon: IconIcons,
+      label: 'Tabler Icons',
       path: '/',
+      notifications: 0,
+    },
+    {
+      icon: IconIcons,
+      label: 'Ant Design',
+      path: '/icon-ant-design',
+      notifications: 0,
+    },
+    {
+      icon: IconIcons,
+      label: 'Bootstrap',
+      path: '/icon-bootstrap',
       notifications: 0,
     },
     {

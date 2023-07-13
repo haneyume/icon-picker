@@ -2,11 +2,13 @@ import { useState, useMemo, useEffect } from 'react';
 
 import { Stack, Grid, TextInput, Tooltip, Pagination } from '@mantine/core';
 import { useDebouncedValue } from '@mantine/hooks';
-import * as Icons from '@tabler/icons-react';
+import { IconSearch } from '@tabler/icons-react';
+
+import * as Icons from 'react-icons/bs';
 
 const limit = 12 * 8;
 
-export const HomePage = () => {
+export const IconBootstrapPage = () => {
   const [search, setSearch] = useState('');
   const [debouncedSearch] = useDebouncedValue(search, 200);
   const [activePage, setPage] = useState(1);
@@ -29,7 +31,6 @@ export const HomePage = () => {
     const start = (activePage - 1) * limit;
     const end = activePage * limit;
 
-    // Ensure we're not going beyond the length of the array
     if (start >= availableIconNames.length) {
       return [];
     } else {
@@ -44,7 +45,7 @@ export const HomePage = () => {
     <Stack>
       <TextInput
         label="Search"
-        icon={<Icons.IconSearch size={18} />}
+        icon={<IconSearch size={18} />}
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
