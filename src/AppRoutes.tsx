@@ -6,6 +6,10 @@ import {
   HomePage,
   IconAntDesignPage,
   IconBootstrapPage,
+  IconFeatherPage,
+  IconFontAwesome5Page,
+  IconFontAwesome6Page,
+  IconMaterialDesignPage,
   SettingsPage,
   NotFoundPage,
 } from './pages';
@@ -23,6 +27,22 @@ export const AppRoutes = () => {
     {
       path: '/icon-bootstrap',
       element: <IconBootstrapPage />,
+    },
+    {
+      path: '/icon-feather',
+      element: <IconFeatherPage />,
+    },
+    {
+      path: '/icon-font-awesome-5',
+      element: <IconFontAwesome5Page />,
+    },
+    {
+      path: '/icon-font-awesome-6',
+      element: <IconFontAwesome6Page />,
+    },
+    {
+      path: '/icon-material-design',
+      element: <IconMaterialDesignPage />,
     },
     {
       path: '/settings',
