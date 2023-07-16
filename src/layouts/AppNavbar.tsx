@@ -51,6 +51,18 @@ export const AppNavbar = () => {
       path: '/icon-material-design',
       notifications: 0,
     },
+    {
+      icon: IconIcons,
+      label: 'Simple Line',
+      path: '/icon-simple-line',
+      notifications: 0,
+    },
+    {
+      icon: IconIcons,
+      label: 'VS Code',
+      path: '/icon-vs-code',
+      notifications: 0,
+    },
   ];
 
   return (

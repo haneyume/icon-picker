@@ -10,6 +10,8 @@ import {
   IconFontAwesome5Page,
   IconFontAwesome6Page,
   IconMaterialDesignPage,
+  IconSimpleLinePage,
+  IconVSCodePage,
   SettingsPage,
   NotFoundPage,
 } from './pages';
@@ -43,6 +45,14 @@ export const AppRoutes = () => {
     {
       path: '/icon-material-design',
       element: <IconMaterialDesignPage />,
+    },
+    {
+      path: '/icon-simple-line',
+      element: <IconSimpleLinePage />,
+    },
+    {
+      path: '/icon-vs-code',
+      element: <IconVSCodePage />,
     },
     {
       path: '/settings',
